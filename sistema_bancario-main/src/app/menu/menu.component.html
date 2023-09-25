@@ -1,0 +1,29 @@
+<div class="container mt-5 d-flex justify-content-center">
+    <mat-sidenav-container class="example-container">
+        <mat-sidenav #sidenav mode="side" opened class="example-sidenav">
+            <div class="d-flex justify-content-center">
+                <img src="/assets/img/bank-transfer.png" routerLink="/" alt="banck" width="150" height="100">
+            </div>
+            <mat-nav-list>
+                <mat-list-item routerLink="/">
+                    <p >Cliente</p>
+                </mat-list-item>
+                <mat-list-item routerLink="/conta">
+                    <p>Conta</p>
+                </mat-list-item>
+                <mat-list-item routerLink="/conta/saque">
+                    <p>Saque</p>
+                </mat-list-item>
+                <mat-list-item routerLink="/conta/deposito">
+                    <p >Depósito</p>
+                </mat-list-item>
+                <mat-list-item routerLink="/conta/transferencia"> 
+                    <p>Transferência</p>
+                </mat-list-item>
+            </mat-nav-list>
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <router-outlet></router-outlet>
+        </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
